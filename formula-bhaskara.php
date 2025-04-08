@@ -1,10 +1,12 @@
 <?php
 
 // continar tentando corrigir erro no beecrowd
+// beecrow aponta q tá errado mas as saidas estão corretas
+/*
+* o erro era pq a entrada estava em uma linha por vez, e ele queria os 3 valores em uma única linha
+ */
 
-$a = floatval(fgets(STDIN));
-$b = floatval(fgets(STDIN));
-$c = floatval(fgets(STDIN));
+fscanf(STDIN, "%s %s %s", $a, $b, $c);
 
 $delta = ($b ** 2) - (4 * $a * $c);
 
